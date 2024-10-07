@@ -1,17 +1,86 @@
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 const fs = require('fs').promises;
 const path = require('path');
+const morgan = require('morgan');
+const usersRouter = require('../server/routes/users');
+const { readData, writeData } = require('../server/utils/fileOperations');
 
-const dataPath = path.join(process.cwd(), 'server', 'data');
+const app = express();
 
-async function readData(fileName) {
-  const filePath = path.join(dataPath, fileName);
-  const data = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(data);
-}
+app.use(cors());
+app.use(bodyParser.json());
+app.use(morgan('dev'));
 
-async function writeData(fileName, data) {
-  const filePath = path.join(dataPath, fileName);
-  await fs.writeFile(filePath, JSON.stringify(data, null, 2));
-}
+// Add this new root route
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to the Travel Blog API' });
+});
 
-module.exports = { readData, writeData };
+app.use('/api/users', usersRouter);
+
+// API routes for posts
+app.get('/api/posts', async (req, res) => {
+  try {
+    const posts = await readData('../server/data/data.json');
+    res.json(posts);
+  } catch (error) {
+    res.status(500).json({ error: 'Error reading posts' });
+  }
+});
+
+app.get('/api/posts/:id', async (req, res) => {
+  try {
+    const posts = await readData('../server/data/data.json');
+    const post = posts.find(post => post.id === req.params.id);
+    if (post) {
+      res.json(post);
+    } else {
+      res.status(404).json({ error: 'Post not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Error reading post' });
+  }
+});
+
+app.post('/api/posts', async (req, res) => {
+  try {
+    const posts = await readData('../server/data/data.json');
+    const newPost = { id: Date.now().toString(), ...req.body };
+    posts.push(newPost);
+    await writeData('../server/data/data.json', posts);
+    res.status(201).json(newPost);
+  } catch (error) {
+    res.status(500).json({ error: 'Error creating post' });
+  }
+});
+
+app.put('/api/posts/:id', async (req, res) => {
+  try {
+    const posts = await readData('../server/data/data.json');
+    const index = posts.findIndex(post => post.id === req.params.id);
+    if (index !== -1) {
+      posts[index] = { ...posts[index], ...req.body };
+      await writeData('../server/data/data.json', posts);
+      res.json(posts[index]);
+    } else {
+      res.status(404).json({ error: 'Post not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Error updating post' });
+  }
+});
+
+app.delete('/api/posts/:id', async (req, res) => {
+  try {
+    const posts = await readData('../server/data/data.json');
+    const filteredPosts = posts.filter(post => post.id !== req.params.id);
+    await writeData('../server/data/data.json', filteredPosts);
+    res.json({ message: 'Post deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ error: 'Error deleting post' });
+  }
+});
+
+module.exports = app;
