@@ -1,0 +1,299 @@
+[
+  {
+    "id": 1,
+    "username": "ahmed_traveler",
+    "UserName": {
+      "first": "Ahmed",
+      "last": "Mahmoud"
+    },
+    "email": "ahmed@gmail.com",
+    "password": "pass",
+    "createdAt": "2023-04-15T09:00:00Z",
+    "profilePicture": "./img/user1.png",
+    "bio": "Passionate traveler exploring Egypt's wonders",
+    "socialMedia": {
+      "facebook": "ahmed.traveler",
+      "instagram": "ahmed_travels",
+      "twitter": "ahmed_explorer"
+    },
+    "savedDestinations": [
+      "Cairo",
+      "Luxor",
+      "Aswan"
+    ],
+    "postIds": [
+      "1a1a",
+      "1a1d"
+    ],
+    "favoritePostIds": [
+      "1a1a",
+      "1a1b"
+    ]
+  },
+  {
+    "id": 2,
+    "username": "nour_wanderlust",
+    "UserName": {
+      "first": "Nour",
+      "last": "Hassan"
+    },
+    "email": "nour@gmail.com",
+    "password": "pass123",
+    "createdAt": "2023-05-20T14:30:00Z",
+    "profilePicture": "./img/user1.png",
+    "bio": "Adventure seeker and photography enthusiast",
+    "socialMedia": {
+      "facebook": "nour.wanderlust",
+      "instagram": "nour_captures",
+      "twitter": "nour_travels"
+    },
+    "savedDestinations": [
+      "Hurghada",
+      "Cairo",
+      "Luxor"
+    ],
+    "postIds": [
+      "1a1b",
+      "1a1e"
+    ],
+    "favoritePostIds": [
+      "1a1c",
+      "1a1e"
+    ]
+  },
+  {
+    "id": 3,
+    "username": "MohAli",
+    "UserName": {
+      "first": "Mohamed",
+      "last": "Ali"
+    },
+    "email": "moh.ali@gmail.com",
+    "password": "egypt123",
+    "createdAt": "2023-06-10T11:15:00Z",
+    "profilePicture": "./img/user1.png",
+    "bio": "Local guide sharing the hidden gems of Egypt",
+    "socialMedia": {
+      "facebook": "mohammed.localguide",
+      "instagram": "mohammed_egyptyours",
+      "twitter": "mohammed_guide"
+    },
+    "savedDestinations": [
+      "Giza",
+      "Cairo",
+      "Luxor"
+    ],
+    "postIds": [
+      "1a1c"
+    ],
+    "favoritePostIds": [
+      "1a1e",
+      "1a1c"
+    ]
+  },
+  {
+    "id": 4,
+    "username": "Sarah",
+    "UserName": {
+      "first": "Sarah",
+      "last": "Thompson"
+    },
+    "email": "sarah.thompson@gmail.com",
+    "password": "pharaoh2023",
+    "createdAt": "2023-07-05T16:45:00Z",
+    "profilePicture": "./img/user1.png",
+    "bio": "Egyptologist sharing insights on ancient Egyptian history",
+    "socialMedia": {
+      "facebook": "sarah.egyptologist",
+      "instagram": "sarah_ancientegypt",
+      "twitter": "sarah_hieroglyphs"
+    },
+    "savedDestinations": [
+      "Giza",
+      "Nile",
+      "Luxor",
+      "Aswan"
+    ],
+    "postIds": [
+      "1a1f"
+    ],
+    "favoritePostIds": [
+      "1a1b",
+      "1a1d"
+    ]
+  },
+  {
+    "id": 5,
+    "username": "Hassan",
+    "UserName": {
+      "first": "Hassan",
+      "last": "Mahmoud"
+    },
+    "email": "hassan.mahmoud@gmail.com",
+    "password": "camelride",
+    "createdAt": "2023-08-01T10:00:00Z",
+    "profilePicture": "./img/user1.png",
+    "bio": "Desert safari organizer and photography enthusiast",
+    "socialMedia": {
+      "facebook": "hassan.desertadventures",
+      "instagram": "hassan_saharaphotos",
+      "twitter": "hassan_cameltrek"
+    },
+    "savedDestinations": [
+      "Giza",
+      "Cairo",
+      "Aswan"
+    ],
+    "postIds": [
+      "1a1g"
+    ],
+    "favoritePostIds": [
+      "1a1a",
+      "1a1c"
+    ]
+  },
+  {
+    "id": 6,
+    "username": "Arsani",
+    "UserName": {
+      "first": "Arsani",
+      "last": "Adel"
+    },
+    "email": "arsani.boutros@gmail.com",
+    "password": "coptichistory",
+    "createdAt": "2023-09-15T13:20:00Z",
+    "profilePicture": "./img/user1.png",
+    "bio": "Coptic history enthusiast and tour guide in Old Cairo",
+    "socialMedia": {
+      "facebook": "arsani.guide",
+      "instagram": "arsani_oldcairo",
+      "twitter": "arsani_art"
+    },
+    "savedDestinations": [
+      "Cairo",
+      "Alexandria",
+      "Minya"
+    ],
+    "postIds": [
+      "1a1h"
+    ],
+    "favoritePostIds": [
+      "1a1d",
+      "1a1f"
+    ]
+  },
+  {
+    "id": 7,
+    "username": "M_Farid",
+    "UserName": {
+      "first": "Mahmoud",
+      "last": "Farid"
+    },
+    "email": "m.farid@gmail.com",
+    "password": "nilecruise2023",
+    "createdAt": "2023-10-05T09:45:00Z",
+    "profilePicture": "./img/user1.png",
+    "bio": "Nile cruise expert and lover of Egyptian cuisine",
+    "socialMedia": {
+      "facebook": "mohamed.nilecruises",
+      "instagram": "m_farid_nileviews",
+      "twitter": "m_farid_egyfoods"
+    },
+    "savedDestinations": [
+      "Luxor",
+      "Aswan",
+      "Edfu",
+      "Kom Ombo"
+    ],
+    "postIds": [
+      "1a1i"
+    ],
+    "favoritePostIds": [
+      "1a1b",
+      "1a1g"
+    ]
+  },
+  {
+    "id": 8,
+    "username": "Abanob",
+    "UserName": {
+      "first": "Abanob",
+      "last": "Adel"
+    },
+    "email": "abanob.adel@gmail.com",
+    "password": "redsea2023",
+    "createdAt": "2023-11-20T11:30:00Z",
+    "profilePicture": "./img/user1.png",
+    "bio": "Red Sea diving instructor and marine life photographer",
+    "socialMedia": {
+      "facebook": "abanob.divingpro",
+      "instagram": "abanob_underwaterphotos",
+      "twitter": "abanob_redsealife"
+    },
+    "savedDestinations": [
+      "Hurghada",
+      "Sharm El Sheikh",
+      "Marsa Alam",
+      "Dahab"
+    ],
+    "postIds": [
+      "1a1j"
+    ],
+    "favoritePostIds": [
+      "1a1e",
+      "1a1i"
+    ]
+  },
+  {
+    "id": 9,
+    "username": "ahmed_traveler1",
+    "UserName": {
+      "first": "Ahmed",
+      "last": "atef"
+    },
+    "email": "ahatif@hotmail.com",
+    "password": "1234",
+    "confirmPassword": "1234",
+    "bio": "not much to say",
+    "socialMedia": {
+      "facebook": "facebookpage",
+      "twitter": "twitterpage",
+      "instagram": "instapage"
+    }
+  },
+  {
+    "id": 0,
+    "username": "user5",
+    "UserName": {
+      "first": "user5",
+      "last": "user5"
+    },
+    "email": "a@a.com",
+    "password": "1234",
+    "confirmPassword": "1234",
+    "bio": "nothing",
+    "socialMedia": {
+      "facebook": "face",
+      "twitter": "tweet",
+      "instagram": "insta"
+    },
+    "UserName.first": "aaaa",
+    "UserName.last": "aaaa"
+  },
+  {
+    "id": 10,
+    "username": "user0",
+    "UserName": {
+      "first": "user0",
+      "last": "zero"
+    },
+    "email": "zero@h.com",
+    "password": "1234",
+    "bio": "no bio",
+    "socialMedia": {
+      "facebook": "myfacebook",
+      "twitter": "my tweer",
+      "instagram": "insta"
+    }
+  }
+]
