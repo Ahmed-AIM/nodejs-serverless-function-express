@@ -18,7 +18,7 @@ app.use('/api/users', usersRouter);
 // API routes for posts
 app.get('/api/posts', async (req, res) => {
   try {
-    const posts = await readData('./data/data.json');
+    const posts = await readData('../server/data/data.json');
     res.json(posts);
   } catch (error) {
     res.status(500).json({ error: 'Error reading posts' });
@@ -27,7 +27,7 @@ app.get('/api/posts', async (req, res) => {
 
 app.get('/api/posts/:id', async (req, res) => {
   try {
-    const posts = await readData('./data/data.json');
+    const posts = await readData('../server/data/data.json');
     const post = posts.find(post => post.id === req.params.id);
     if (post) {
       res.json(post);
@@ -41,10 +41,10 @@ app.get('/api/posts/:id', async (req, res) => {
 
 app.post('/api/posts', async (req, res) => {
   try {
-    const posts = await readData('./data/data.json');
+    const posts = await readData('../server/data/data.json');
     const newPost = { id: Date.now().toString(), ...req.body };
     posts.push(newPost);
-    await writeData('./data/data.json', posts);
+    await writeData('../server/data/data.json', posts);
     res.status(201).json(newPost);
   } catch (error) {
     res.status(500).json({ error: 'Error creating post' });
@@ -53,11 +53,11 @@ app.post('/api/posts', async (req, res) => {
 
 app.put('/api/posts/:id', async (req, res) => {
   try {
-    const posts = await readData('./data/data.json');
+    const posts = await readData('../server/data/data.json');
     const index = posts.findIndex(post => post.id === req.params.id);
     if (index !== -1) {
       posts[index] = { ...posts[index], ...req.body };
-      await writeData('./data/data.json', posts);
+      await writeData('../server/data/data.json', posts);
       res.json(posts[index]);
     } else {
       res.status(404).json({ error: 'Post not found' });
@@ -71,7 +71,7 @@ app.delete('/api/posts/:id', async (req, res) => {
   try {
     const posts = await readData('./data/data.json');
     const filteredPosts = posts.filter(post => post.id !== req.params.id);
-    await writeData('./data/data.json', filteredPosts);
+    await writeData('../server/data/data.json', filteredPosts);
     res.json({ message: 'Post deleted successfully' });
   } catch (error) {
     res.status(500).json({ error: 'Error deleting post' });
