@@ -41,10 +41,10 @@ app.get('/api/posts/:id', async (req, res) => {
 
 app.post('/api/posts', async (req, res) => {
   try {
-    const posts = await readData('data.json');
+    const posts = await readData('./data/data.json');
     const newPost = { id: Date.now().toString(), ...req.body };
     posts.push(newPost);
-    await writeData('data.json', posts);
+    await writeData('./data/data.json', posts);
     res.status(201).json(newPost);
   } catch (error) {
     res.status(500).json({ error: 'Error creating post' });
