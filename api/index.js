@@ -15,25 +15,10 @@ app.use(morgan('dev'));
 
 app.use('/api/users', usersRouter);
 
-// Data file paths
-const dataPath = path.join(__dirname, 'data', 'data.json');
-const usersPath = path.join(__dirname, 'data', 'users.json');
-
-// Read data from file
-async function readData(filePath) {
-  const data = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(data);
-}
-
-// Write data to file
-async function writeData(filePath, data) {
-  await fs.writeFile(filePath, JSON.stringify(data, null, 2));
-}
-
 // API routes for posts
 app.get('/api/posts', async (req, res) => {
   try {
-    const posts = await readData(dataPath);
+    const posts = await readData('data.json');
     res.json(posts);
   } catch (error) {
     res.status(500).json({ error: 'Error reading posts' });
@@ -42,7 +27,7 @@ app.get('/api/posts', async (req, res) => {
 
 app.get('/api/posts/:id', async (req, res) => {
   try {
-    const posts = await readData(dataPath);
+    const posts = await readData('data.json');
     const post = posts.find(post => post.id === req.params.id);
     if (post) {
       res.json(post);
@@ -56,10 +41,10 @@ app.get('/api/posts/:id', async (req, res) => {
 
 app.post('/api/posts', async (req, res) => {
   try {
-    const posts = await readData(dataPath);
+    const posts = await readData('data.json');
     const newPost = { id: Date.now().toString(), ...req.body };
     posts.push(newPost);
-    await writeData(dataPath, posts);
+    await writeData('data.json', posts);
     res.status(201).json(newPost);
   } catch (error) {
     res.status(500).json({ error: 'Error creating post' });
@@ -68,11 +53,11 @@ app.post('/api/posts', async (req, res) => {
 
 app.put('/api/posts/:id', async (req, res) => {
   try {
-    const posts = await readData(dataPath);
+    const posts = await readData('data.json');
     const index = posts.findIndex(post => post.id === req.params.id);
     if (index !== -1) {
       posts[index] = { ...posts[index], ...req.body };
-      await writeData(dataPath, posts);
+      await writeData('data.json', posts);
       res.json(posts[index]);
     } else {
       res.status(404).json({ error: 'Post not found' });
