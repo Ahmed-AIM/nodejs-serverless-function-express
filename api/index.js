@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const fs = require('fs').promises;
+const path = require('path');
 const morgan = require('morgan');
 const usersRouter = require('../server/routes/users');
 const { readData, writeData } = require('../server/utils/fileOperations');
@@ -13,10 +15,25 @@ app.use(morgan('dev'));
 
 app.use('/api/users', usersRouter);
 
+// Data file paths
+const dataPath = path.join(__dirname, 'data', 'data.json');
+const usersPath = path.join(__dirname, 'data', 'users.json');
+
+// Read data from file
+async function readData(filePath) {
+  const data = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(data);
+}
+
+// Write data to file
+async function writeData(filePath, data) {
+  await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+}
+
 // API routes for posts
 app.get('/api/posts', async (req, res) => {
   try {
-    const posts = await readData('data.json');
+    const posts = await readData(dataPath);
     res.json(posts);
   } catch (error) {
     res.status(500).json({ error: 'Error reading posts' });
@@ -25,7 +42,7 @@ app.get('/api/posts', async (req, res) => {
 
 app.get('/api/posts/:id', async (req, res) => {
   try {
-    const posts = await readData('data.json');
+    const posts = await readData(dataPath);
     const post = posts.find(post => post.id === req.params.id);
     if (post) {
       res.json(post);
@@ -39,10 +56,10 @@ app.get('/api/posts/:id', async (req, res) => {
 
 app.post('/api/posts', async (req, res) => {
   try {
-    const posts = await readData('data.json');
+    const posts = await readData(dataPath);
     const newPost = { id: Date.now().toString(), ...req.body };
     posts.push(newPost);
-    await writeData('data.json', posts);
+    await writeData(dataPath, posts);
     res.status(201).json(newPost);
   } catch (error) {
     res.status(500).json({ error: 'Error creating post' });
@@ -51,11 +68,11 @@ app.post('/api/posts', async (req, res) => {
 
 app.put('/api/posts/:id', async (req, res) => {
   try {
-    const posts = await readData('data.json');
+    const posts = await readData(dataPath);
     const index = posts.findIndex(post => post.id === req.params.id);
     if (index !== -1) {
       posts[index] = { ...posts[index], ...req.body };
-      await writeData('data.json', posts);
+      await writeData(dataPath, posts);
       res.json(posts[index]);
     } else {
       res.status(404).json({ error: 'Post not found' });
@@ -67,9 +84,9 @@ app.put('/api/posts/:id', async (req, res) => {
 
 app.delete('/api/posts/:id', async (req, res) => {
   try {
-    const posts = await readData('data.json');
+    const posts = await readData(dataPath);
     const filteredPosts = posts.filter(post => post.id !== req.params.id);
-    await writeData('data.json', filteredPosts);
+    await writeData(dataPath, filteredPosts);
     res.json({ message: 'Post deleted successfully' });
   } catch (error) {
     res.status(500).json({ error: 'Error deleting post' });
