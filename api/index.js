@@ -13,6 +13,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
+// Add this new root route
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to the Travel Blog API' });
+});
+
 app.use('/api/users', usersRouter);
 
 // API routes for posts
@@ -69,7 +74,7 @@ app.put('/api/posts/:id', async (req, res) => {
 
 app.delete('/api/posts/:id', async (req, res) => {
   try {
-    const posts = await readData('./data/data.json');
+    const posts = await readData('../server/data/data.json');
     const filteredPosts = posts.filter(post => post.id !== req.params.id);
     await writeData('../server/data/data.json', filteredPosts);
     res.json({ message: 'Post deleted successfully' });
