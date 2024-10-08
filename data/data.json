@@ -1,0 +1,604 @@
+[
+  {
+    "id": "1a1a",
+    "title": "Exploring the Pyramids of Giza",
+    "content": "Standing in awe before the last remaining wonder of the ancient world...",
+    "date": "2023-05-15",
+    "author": {
+      "uId": 1,
+      "Uname": "Ahmed Atef"
+    },
+    "tags": [
+      "Egypt",
+      "pyramids",
+      "ancient history"
+    ],
+    "comments": [
+      {
+        "id": "1727762182517",
+        "userid": 2,
+        "comName": "",
+        "comment": "The Sphinx is truly breathtaking!",
+        "date": "2023-05-16"
+      },
+      {
+        "id": "1727792182317",
+        "userid": 3,
+        "comName": "Emy",
+        "comment": "I can't wait to visit Egypt myself!",
+        "date": "2023-05-17"
+      },
+      {
+        "id": "1727792182517",
+        "userid": 1,
+        "comName": "AHMED",
+        "comment": "that was amazing",
+        "date": "2024-10-01T14:16:22.517Z"
+      },
+      {
+        "id": "1727792959848",
+        "userid": 3,
+        "comName": "MohAli",
+        "comment": "now we go",
+        "date": "2024-10-01T14:29:19.848Z"
+      }
+    ],
+    "images": [
+      "./img/giza_1.jpg",
+      "./img/giza_2.jpg",
+      "./img/giza_3.jpg",
+      "./img/giza_4.jpg",
+      "./img/giza_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": [
+      "Giza",
+      "Cairo"
+    ]
+  },
+  {
+    "id": "1a1b",
+    "title": "Cruising the Nile River",
+    "content": "<p>Embarking on a luxurious journey down the lifeline of ancient Egypt...</p>",
+    "date": "2023-06-20",
+    "author": {
+      "uId": 2,
+      "Uname": "Jane Doe"
+    },
+    "tags": [
+      "Egypt",
+      "Nile",
+      "river cruise"
+    ],
+    "comments": [
+      {
+        "userid": 1,
+        "comName": "",
+        "comment": "The temples along the Nile are incredible!",
+        "date": "2023-06-21"
+      },
+      {
+        "userid": 3,
+        "comName": "Emy",
+        "comment": "Sunset on the Nile is unforgettable.",
+        "date": "2023-06-22"
+      }
+    ],
+    "images": [
+      "./img/nile_1.jpg",
+      "./img/nile_2.jpg",
+      "./img/nile_3.jpg",
+      "./img/nile_4.jpg",
+      "./img/nile_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": [
+      "Nile",
+      "Cairo",
+      "Luxor",
+      "Aswan"
+    ]
+  },
+  {
+    "id": "1a1c",
+    "title": "Discovering the Valley of the Kings",
+    "content": "<p>Venturing into the tombs of pharaohs in Luxor's famous necropolis...</p>",
+    "date": "2023-07-10",
+    "author": {
+      "uId": 3,
+      "Uname": "Emy"
+    },
+    "tags": [
+      "Egypt",
+      "Luxor",
+      "archaeology"
+    ],
+    "comments": [
+      {
+        "userid": 1,
+        "comName": "",
+        "comment": "Tutankhamun's tomb is a must-see!",
+        "date": "2023-07-11"
+      },
+      {
+        "userid": 2,
+        "comName": "",
+        "comment": "The wall paintings are so well preserved!",
+        "date": "2023-07-12"
+      }
+    ],
+    "images": [
+      "./img/valley_kings_2.jpg",
+      "./img/valley_kings_1.jpg",
+      "./img/valley_kings_3.jpg",
+      "./img/valley_kings_4.jpg",
+      "./img/valley_kings_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Luxor"
+  },
+  {
+    "id": "1a1d",
+    "title": "Exploring Islamic Cairo",
+    "content": "<p>Wandering through the winding alleys of the historic Islamic district...</p>",
+    "date": "2023-08-05",
+    "author": {
+      "uId": 1,
+      "Uname": "Ahmed Atef"
+    },
+    "tags": [
+      "Egypt",
+      "Cairo",
+      "Islamic architecture",
+      "religion"
+    ],
+    "comments": [
+      {
+        "userid": 3,
+        "comName": "Hassan",
+        "comment": "The mosques are architectural marvels!",
+        "date": "2023-08-06"
+      },
+      {
+        "userid": 2,
+        "comName": "Jane Doe",
+        "comment": "Khan el-Khalili bazaar is a shopper's paradise!",
+        "date": "2023-08-07"
+      }
+    ],
+    "images": [
+      "./img/islamic_cairo_1.jpg",
+      "./img/islamic_cairo_2.jpg",
+      "./img/islamic_cairo_3.jpg",
+      "./img/islamic_cairo_4.jpg",
+      "./img/islamic_cairo_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Cairo"
+  },
+  {
+    "id": "1a1e",
+    "title": "Diving in the Red Sea",
+    "content": "<p>Exploring the vibrant coral reefs and marine life of Hurghada...</p>",
+    "date": "2023-09-12",
+    "author": {
+      "uId": 2,
+      "Uname": "Jane Doe"
+    },
+    "tags": [
+      "Egypt",
+      "Red Sea",
+      "diving"
+    ],
+    "comments": [
+      {
+        "userid": 1,
+        "comName": "Ahmed Atef",
+        "comment": "The underwater world is breathtaking!",
+        "date": "2023-09-13"
+      },
+      {
+        "userid": 3,
+        "comName": "Hassan",
+        "comment": "I saw so many colorful fish!",
+        "date": "2023-09-14"
+      }
+    ],
+    "images": [
+      "./img/red_sea_1.jpg",
+      "./img/red_sea_2.jpg",
+      "./img/red_sea_3.jpg",
+      "./img/red_sea_4.jpg",
+      "./img/red_sea_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Hurghada"
+  },
+  {
+    "id": "1a1f",
+    "title": "The Majestic Temples of Abu Simbel",
+    "content": "<p>Witnessing the colossal statues of Ramses II at the awe-inspiring Abu Simbel temples...</p>",
+    "date": "2023-10-05",
+    "author": {
+      "uId": 4,
+      "Uname": "Sarah Thompson"
+    },
+    "tags": [
+      "Egypt",
+      "Abu Simbel",
+      "ancient temples"
+    ],
+    "comments": [
+      {
+        "userid": 1,
+        "comName": "Ahmed Atef",
+        "comment": "The relocation of these temples is an engineering marvel!",
+        "date": "2023-10-06"
+      },
+      {
+        "userid": 2,
+        "comName": "Jane Doe",
+        "comment": "The sound and light show was unforgettable!",
+        "date": "2023-10-07"
+      }
+    ],
+    "images": [
+      "./img/abu_simbel_1.jpg",
+      "./img/abu_simbel_2.jpg",
+      "./img/abu_simbel_3.jpg",
+      "./img/abu_simbel_4.jpg",
+      "./img/abu_simbel_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Abu Simbel"
+  },
+  {
+    "id": "1a1g",
+    "title": "Camel Trekking in the White Desert",
+    "content": "<p>Embarking on a surreal journey through the chalk rock formations of the White Desert...</p>",
+    "date": "2023-11-15",
+    "author": {
+      "uId": 5,
+      "Uname": "Hassan Mahmoud"
+    },
+    "tags": [
+      "Egypt",
+      "White Desert",
+      "adventure"
+    ],
+    "comments": [
+      {
+        "userid": 3,
+        "comName": "MohAli",
+        "comment": "The starry night sky in the desert is unbelievable!",
+        "date": "2023-11-16"
+      },
+      {
+        "userid": 4,
+        "comName": "Sarah",
+        "comment": "This looks like an otherworldly experience!",
+        "date": "2023-11-17"
+      }
+    ],
+    "images": [
+      "./img/white_desert_1.jpg",
+      "./img/white_desert_2.jpg",
+      "./img/white_desert_3.jpg",
+      "./img/white_desert_4.jpg",
+      "./img/white_desert_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "White Desert"
+  },
+  {
+    "id": "1a1h",
+    "title": "Exploring Coptic Cairo",
+    "content": "<p>Discovering the rich Christian heritage in the heart of Old Cairo...</p>",
+    "date": "2023-12-20",
+    "author": {
+      "uId": 6,
+      "Uname": "Arsani Boutros"
+    },
+    "tags": [
+      "Egypt",
+      "Cairo",
+      "Coptic history"
+    ],
+    "comments": [
+      {
+        "userid": 1,
+        "comName": "Ahmed Atef",
+        "comment": "The Hanging Church is a true architectural gem!",
+        "date": "2023-12-21"
+      },
+      {
+        "userid": 5,
+        "comName": "Hassan",
+        "comment": "I never knew Cairo had such a rich Christian history.",
+        "date": "2023-12-22"
+      }
+    ],
+    "images": [
+      "./img/coptic_cairo_1.jpg",
+      "./img/coptic_cairo_2.jpg",
+      "./img/coptic_cairo_3.jpg",
+      "./img/coptic_cairo_4.jpg",
+      "./img/coptic_cairo_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Cairo"
+  },
+  {
+    "id": "1a1i",
+    "title": "Sailing on a Felucca in Aswan",
+    "content": "<p>Gliding peacefully along the Nile on a traditional Egyptian sailboat in Aswan...</p>",
+    "date": "2024-01-10",
+    "author": {
+      "uId": 7,
+      "Uname": "Mohamed Farid"
+    },
+    "tags": [
+      "Egypt",
+      "Aswan",
+      "Nile"
+    ],
+    "comments": [
+      {
+        "userid": 2,
+        "comName": "Jane Doe",
+        "comment": "The sunset views from the felucca are magical!",
+        "date": "2024-01-11"
+      },
+      {
+        "userid": 4,
+        "comName": "Sarah",
+        "comment": "Aswan has such a peaceful atmosphere.",
+        "date": "2024-01-12"
+      }
+    ],
+    "images": [
+      "./img/aswan_felucca_1.jpg",
+      "./img/aswan_felucca_2.jpg",
+      "./img/aswan_felucca_3.jpg",
+      "./img/aswan_felucca_4.jpg",
+      "./img/aswan_felucca_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Aswan"
+  },
+  {
+    "id": "1a1j",
+    "title": "Snorkeling in Sharm El Sheikh",
+    "content": "<p>Discovering the colorful underwater world of the Red Sea in Sharm El Sheikh...</p>",
+    "date": "2024-02-05",
+    "author": {
+      "uId": 8,
+      "Uname": "Abanob Youssef"
+    },
+    "tags": [
+      "Egypt",
+      "Sharm El Sheikh",
+      "snorkeling"
+    ],
+    "comments": [
+      {
+        "userid": 3,
+        "comName": "MohAli",
+        "comment": "The coral reefs are so vibrant and alive!",
+        "date": "2024-02-06"
+      },
+      {
+        "userid": 6,
+        "comName": "Arsani",
+        "comment": "I saw a sea turtle! What an amazing experience.",
+        "date": "2024-02-07"
+      }
+    ],
+    "images": [
+      "./img/sharm_snorkel_1.jpg",
+      "./img/sharm_snorkel_2.jpg",
+      "./img/sharm_snorkel_3.jpg",
+      "./img/sharm_snorkel_4.jpg",
+      "./img/sharm_snorkel_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": [
+      "Sharm El Sheikh",
+      "Sinai"
+    ]
+  },
+  {
+    "id": "1a1k",
+    "title": "Wandering Through Alexandria's Ancient Wonders",
+    "content": "<p>Exploring the rich Greco-Roman heritage of Egypt's second-largest city...</p>",
+    "date": "2024-03-15",
+    "author": {
+      "uId": 1,
+      "Uname": "Ahmed Atef"
+    },
+    "tags": [
+      "Egypt",
+      "Alexandria",
+      "history"
+    ],
+    "comments": [
+      {
+        "userid": 5,
+        "comName": "Hassan",
+        "comment": "The Bibliotheca Alexandrina is a modern marvel!",
+        "date": "2024-03-16"
+      },
+      {
+        "userid": 7,
+        "comName": "M_Farid",
+        "comment": "Don't miss the Catacombs of Kom el Shoqafa!",
+        "date": "2024-03-17"
+      }
+    ],
+    "images": [
+      "./img/alexandria_1.jpg",
+      "./img/alexandria_2.jpg",
+      "./img/alexandria_3.jpg",
+      "./img/alexandria_4.jpg",
+      "./img/alexandria_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Alexandria"
+  },
+  {
+    "id": "1a1l",
+    "title": "Hot Air Ballooning Over Luxor",
+    "content": "<p>Soaring above the ancient temples and tombs of Luxor in a hot air balloon...</p>",
+    "date": "2024-04-20",
+    "author": {
+      "uId": 2,
+      "Uname": "Jane Doe"
+    },
+    "tags": [
+      "Egypt",
+      "Luxor",
+      "adventure"
+    ],
+    "comments": [
+      {
+        "userid": 4,
+        "comName": "Sarah",
+        "comment": "The view of the Valley of the Kings from above is breathtaking!",
+        "date": "2024-04-21"
+      },
+      {
+        "userid": 8,
+        "comName": "Abanob",
+        "comment": "This is definitely on my bucket list now!",
+        "date": "2024-04-22"
+      }
+    ],
+    "images": [
+      "./img/luxor_balloon_1.jpg",
+      "./img/luxor_balloon_2.jpg",
+      "./img/luxor_balloon_3.jpg",
+      "./img/luxor_balloon_4.jpg",
+      "./img/luxor_balloon_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Luxor"
+  },
+  {
+    "id": "1a1m",
+    "title": "Discovering the Oasis of Siwa",
+    "content": "<p>Exploring the remote desert oasis of Siwa, home to unique Berber culture...</p>",
+    "date": "2024-05-10",
+    "author": {
+      "uId": 3,
+      "Uname": "MohAli"
+    },
+    "tags": [
+      "Egypt",
+      "Siwa",
+      "culture"
+    ],
+    "comments": [
+      {
+        "userid": 6,
+        "comName": "Arsani",
+        "comment": "The Oracle of Amun temple is fascinating!",
+        "date": "2024-05-11"
+      },
+      {
+        "userid": 1,
+        "comName": "Ahmed Atef",
+        "comment": "Siwa's dates are the best I've ever tasted!",
+        "date": "2024-05-12"
+      }
+    ],
+    "images": [
+      "./img/siwa_1.jpg",
+      "./img/siwa_2.jpg",
+      "./img/siwa_3.jpg",
+      "./img/siwa_4.jpg",
+      "./img/siwa_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Siwa"
+  },
+  {
+    "id": "1a1n",
+    "title": "Exploring the Monastery of St. Catherine",
+    "content": "<p>Visiting the ancient monastery at the foot of Mount Sinai, home to priceless religious artifacts...</p>",
+    "date": "2024-06-05",
+    "author": {
+      "uId": 6,
+      "Uname": "Arsani Boutros"
+    },
+    "tags": [
+      "Egypt",
+      "Sinai",
+      "religion"
+    ],
+    "comments": [
+      {
+        "userid": 4,
+        "comName": "Sarah",
+        "comment": "The library of ancient manuscripts is incredible!",
+        "date": "2024-06-06"
+      },
+      {
+        "userid": 2,
+        "comName": "Jane Doe",
+        "comment": "Climbing Mount Sinai for sunrise was unforgettable.",
+        "date": "2024-06-07"
+      }
+    ],
+    "images": [
+      "./img/st_catherine_1.jpg",
+      "./img/st_catherine_2.jpg",
+      "./img/st_catherine_3.jpg",
+      "./img/st_catherine_4.jpg",
+      "./img/st_catherine_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": "Sinai"
+  },
+  {
+    "id": "1a1o",
+    "title": "Relaxing in the Beach Town of Dahab",
+    "content": "<p>Experiencing the laid-back atmosphere and world-class diving in the Sinai Peninsula's gem...</p>",
+    "date": "2024-07-15",
+    "author": {
+      "uId": 8,
+      "Uname": "Abanob Youssef"
+    },
+    "tags": [
+      "Egypt",
+      "Dahab",
+      "beach",
+      "Sinai"
+    ],
+    "comments": [
+      {
+        "userid": 5,
+        "comName": "Hassan",
+        "comment": "The Blue Hole dive site is both beautiful and challenging!",
+        "date": "2024-07-16"
+      },
+      {
+        "userid": 7,
+        "comName": "M_Farid",
+        "comment": "Dahab's seafood restaurants are amazing!",
+        "date": "2024-07-17"
+      }
+    ],
+    "images": [
+      "./img/dahab_1.jpg",
+      "./img/dahab_2.jpg",
+      "./img/dahab_3.jpg",
+      "./img/dahab_4.jpg",
+      "./img/dahab_5.jpg"
+    ],
+    "Country": "Egypt",
+    "Destination": [
+      "Dahab",
+      "Sinai"
+    ]
+  }
+]
