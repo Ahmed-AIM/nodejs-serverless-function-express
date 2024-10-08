@@ -4,8 +4,6 @@ const bodyParser = require('body-parser');
 const fs = require('fs').promises;
 const path = require('path');
 const morgan = require('morgan');
-const usersRouter = require('../server/routes/users');
-const { readData, writeData } = require('../server/utils/fileOperations');
 
 // Configure CORS
 const corsOptions = {
