@@ -4,6 +4,14 @@ const bodyParser = require('body-parser');
 const fs = require('fs').promises;
 const path = require('path');
 const morgan = require('morgan');
+const usersRouter = require('../server/routes/users');
+const { readData, writeData } = require('../server/utils/fileOperations');
+
+// Configure CORS
+const corsOptions = {
+  origin: 'https://new-repo-travel-blog.vercel.app',
+  optionsSuccessStatus: 200
+};
 
 // File operation functions
 const getFilePath = (filename) => path.join(__dirname, '..', 'data', filename);
@@ -24,7 +32,7 @@ process.on('unhandledRejection', (reason, promise) => {
 
 const app = express();
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
